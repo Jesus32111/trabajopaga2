@@ -5,7 +5,8 @@ export interface Course {
   imageUrl: string;
   status: 'available' | 'coming_soon';
   difficulty: 'Básico' | 'Intermedio' | 'Avanzado';
-  careerBenefits: string[]; // Beneficios generales, la IA puede adaptar esto
+  careerBenefits: string[];
+  relatedCareers: string[];
 }
 
 export const courses: Course[] = [
@@ -21,6 +22,7 @@ export const courses: Course[] = [
       'Fundamental para roles de gerencia y coordinación.',
       'Aumenta la productividad y cohesión del equipo.'
     ],
+    relatedCareers: ['Administración', 'Recursos Humanos', 'Gerencia', 'Coordinación'],
   },
   {
     id: '2',
@@ -34,6 +36,7 @@ export const courses: Course[] = [
       'Permite crear campañas efectivas y medir resultados.',
       'Abre puertas en el sector digital y e-commerce.'
     ],
+    relatedCareers: ['Marketing', 'Ventas', 'Comunicación', 'Publicidad'],
   },
   {
     id: '3',
@@ -47,6 +50,7 @@ export const courses: Course[] = [
       'Permite crear soluciones tecnológicas desde cero.',
       'Alta demanda laboral en el sector tecnológico.'
     ],
+    relatedCareers: ['Ingeniería de Sistemas', 'Desarrollo de Software', 'Computación'],
   },
   {
     id: '4',
@@ -60,6 +64,7 @@ export const courses: Course[] = [
       'Valioso para administradores, ingenieros y líderes de equipo.',
       'Optimiza la entrega de resultados y la colaboración.'
     ],
+    relatedCareers: ['Administración', 'Ingeniería Industrial', 'Desarrollo de Software'],
   },
   {
     id: '5',
@@ -73,6 +78,7 @@ export const courses: Course[] = [
       'Mejora las relaciones interpersonales y profesionales.',
       'Clave para cerrar acuerdos y resolver conflictos.'
     ],
+    relatedCareers: ['Ventas', 'Recursos Humanos', 'Derecho', 'Administración'],
   },
   {
     id: '6',
@@ -86,6 +92,7 @@ export const courses: Course[] = [
       'Permite fundamentar decisiones estratégicas con evidencia.',
       'Herramienta clave para la optimización de procesos y el crecimiento.'
     ],
+    relatedCareers: ['Economía', 'Administración', 'Marketing', 'Ingeniería'],
   },
   {
     id: '7',
@@ -99,6 +106,7 @@ export const courses: Course[] = [
       'Permite entender y aplicar conceptos básicos de IA.',
       'Abre nuevas oportunidades en innovación y desarrollo.'
     ],
+    relatedCareers: ['Ingeniería de Sistemas', 'Ciencia de Datos', 'Tecnología'],
   },
   {
     id: '8',
@@ -112,6 +120,7 @@ export const courses: Course[] = [
       'Mejora la usabilidad y satisfacción del usuario.',
       'Alta demanda en el desarrollo de aplicaciones y productos digitales.'
     ],
+    relatedCareers: ['Diseño Gráfico', 'Desarrollo de Software', 'Marketing'],
   },
   {
     id: '9',
@@ -125,5 +134,6 @@ export const courses: Course[] = [
       'Protege información sensible y previene ataques.',
       'Crea conciencia sobre riesgos digitales y mejores prácticas.'
     ],
+    relatedCareers: ['Ingeniería de Sistemas', 'Redes y Telecomunicaciones', 'Tecnología'],
   },
 ];
